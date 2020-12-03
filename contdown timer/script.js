@@ -16,7 +16,7 @@ function countdown() {
     const minutes = Math.floor(totalSeconds / 60) % 60;
     const seconds = Math.floor(totalSeconds) % 60;
 
-    console.log(currentDate)
+    console.log(currentDate);
     daysEl.innerHTML = days;
     hoursEl.innerHTML =  formatTimer(hourse);
     minsEl.innerHTML = formatTimer(minutes);
