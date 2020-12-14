@@ -45,18 +45,20 @@ header button {
     margin-left: 10px;
 }
 .fav-container {
-    background-color: rgb(233, 199, 255);
+    background-color: rgb(243, 225, 255);
     padding: 1rem;
     text-align: center;
 }
 .fav-meals {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
-    overflow: auto;
 }
 .fav-meals li {
-    width: 85px;
+    width: 75px;
+    margin: 5px;
 }
 .fav-meals li img {
     border: 2px solid #ffffff;
@@ -68,4 +70,43 @@ header button {
 }
 .fav-meals li span {
     font-size:0.9rem;
+}
+.meal {
+    margin: 10px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+
+}
+.meal-header {
+    
+}
+.meal-header .random {
+    position: absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal-header img {
+    object-fit: cover;
+    width: 240px;
+    width: 100%;
+} 
+.meal-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem; 
+
+}
+
+.meal-body h4 {
+    margin: 0;
+}
+
+.meal-body button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
 }
